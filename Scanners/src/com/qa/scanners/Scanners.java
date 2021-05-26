@@ -32,9 +32,16 @@ public class Scanners {
 	         case 'm' :
 	         System.out.println("Product of the two numbers: "+
 	    	         Calculator.mult(a, b));
-	         case 'd' :
-	         System.out.println("Result of the division: "+
-	    	         Calculator.div(a, b));
+	            case 'd' :
+	         try {
+	             // ArithmeticException will be thrown because
+	             // a number cannot be divided by 0
+	        	  System.out.println("Result of the division: "+
+	 	    	         Calculator.div(a, b));
+	        	  } 
+	         	  catch (ArithmeticException e) {
+	         		  	System.out.println("Arithmetic Exception: cannot divide by 0");
+	        	  }
 	         break;
 	         default :
 	         System.out.println("Invalid input");
