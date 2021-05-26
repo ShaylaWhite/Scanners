@@ -1,12 +1,24 @@
 package com.qa.scanners;
 
-import java.util.Scanner;
 
 public class Calculator {
-	static Scanner scanner = new Scanner(System.in);
-	
-	public static int add() {
-		Syste.out.println();
-		int valuea
+	//Add Method
+	public static double add(double num1, double num2) {
+		return num1 + num2; 
 	}
+	
+	//Subtract Method
+		public static double subtract(double num1, double num2) {
+			return num1 - num2; 
+		}
+		
+	//Multiply Method
+		public static double mult(double num1, double num2) {
+			return num1 * num2; 
+		}
+		
+	//Divide Method
+		public static double div(double num1, double num2) {
+			return num1 /  num2; 
+		}
 }

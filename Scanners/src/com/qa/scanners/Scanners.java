@@ -22,16 +22,19 @@ public class Scanners {
 	      
 	      switch(ch) {
 	         case 'a' :
-	         System.out.println("Sum of the given two numbers: "+(a+b);
-	         Calculator.add(a+b);
+	         System.out.println("Sum of the given two numbers: " +
+	         Calculator.add(a, b));
 	         break;
 	         case 's' :
-	         System.out.println("Difference between the two numbers: "+(a-b));
+	         System.out.println("Difference between the two numbers: " +
+	    	         Calculator.subtract(a, b));
 	         break;
 	         case 'm' :
-	         System.out.println("Product of the two numbers: "+(a*b));
+	         System.out.println("Product of the two numbers: "+
+	    	         Calculator.mult(a, b));
 	         case 'd' :
-	         System.out.println("Result of the division: "+(a/b));
+	         System.out.println("Result of the division: "+
+	    	         Calculator.div(a, b));
 	         break;
 	         default :
 	         System.out.println("Invalid input");
